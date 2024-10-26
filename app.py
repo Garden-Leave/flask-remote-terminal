@@ -10,7 +10,7 @@ import struct
 import fcntl
 import psutil
 import subprocess
-from config import TERM_INIT_CONFIG
+from config_sample import TERM_INIT_CONFIG
 
 
 __author__ = "fisherworks.cn" #based on flask_term_remote on github
@@ -195,4 +195,4 @@ def pty_disconnect():
 
 
 if __name__ == "__main__":
-    socketio.run(app, host='0.0.0.0', debug=True, port=5000)
+    socketio.run(app, host='0.0.0.0', debug=True, port=5003)
